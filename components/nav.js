@@ -1,29 +1,47 @@
 import Link from 'next/link'
-
-const links = [
-  { href: 'https://github.com/vercel/next.js', label: 'GitHub' },
-  { href: 'https://nextjs.org/docs', label: 'Docs' },
-]
+import FacebookIcon from '../components/icons/facebook.js'
 
 export default function Nav() {
   return (
-    <nav>
-      <ul className="flex justify-between items-center p-8">
-        <li>
-          <Link href="/">
-            <a className="text-blue-500 no-underline">Home</a>
-          </Link>
-        </li>
-        <ul className="flex justify-between items-center space-x-4">
-          {links.map(({ href, label }) => (
-            <li key={`${href}${label}`}>
-              <a href={href} className="btn-blue no-underline">
-                {label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </ul>
-    </nav>
+    <div className="flex items-center justify-between h-8 bg-green-500">
+      <Link href="/" className="p-0">
+        <a className="flex justify-center w-full h-full p-0 hover:bg-gray-500">
+          <div className="flex items-center">
+            Home
+          </div>
+        </a>
+      </Link>
+
+      <Link href="/info" className="p-0">
+        <a className="flex justify-center w-full h-full p-0 hover:bg-gray-500">
+          <div className="flex items-center">
+            Info
+          </div>
+        </a>
+      </Link>
+
+      <Link href="/shop" className="p-0">
+        <a className="flex justify-center w-full h-full p-0 hover:bg-gray-500">
+          <div className="flex items-center">
+            Shop
+          </div>
+        </a>
+      </Link>
+
+      <Link href="/facebook" className="p-0">
+        <a className="flex justify-center w-full h-full p-0 hover:bg-gray-500">
+          <FacebookIcon/>
+        </a>
+      </Link>
+
+      <Link href="/insta" className="p-0">
+        <a className="flex justify-center w-full h-full p-0 hover:bg-gray-500">
+          <div className="flex items-center">
+            Insta
+          </div>
+        </a>
+      </Link>
+
+    </div>
   )
 }

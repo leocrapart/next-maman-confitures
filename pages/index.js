@@ -1,4 +1,5 @@
 import Nav from '../components/nav'
+import Background from '../components/bg'
 
 export default function IndexPage() {
   return (
@@ -9,6 +10,8 @@ export default function IndexPage() {
           Next.js + Tailwind CSS
         </h1>
       </div>
+      <Background></Background>
     </div>
   )
 }
+
