@@ -6,7 +6,7 @@ export default function InfoPage() {
     return (
         <div>
             <Nav></Nav>
-            <div>info page</div>
+            <div>info page 2</div>
             <Background></Background>
         </div>
     )

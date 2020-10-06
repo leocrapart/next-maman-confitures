@@ -6,8 +6,9 @@ export default function ShopPage() {
     return (
         <div>
             <Nav/>
+            <div>Shop page</div>
             <div>
-                shop page
+                shop page 2
             </div> 
             <Background/>
         </div>
